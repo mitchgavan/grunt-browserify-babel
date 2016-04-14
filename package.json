@@ -1,0 +1,27 @@
+{
+  "name": "grunt-browserify-babel",
+  "version": "1.0.0",
+  "description": "An example setup for ES6 modules with Browserify and Grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ES6",
+    "modules",
+    "browserify",
+    "grunt"
+  ],
+  "author": "Mitch Gavan",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "factor-bundle": "^2.5.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "jquery": "^2.2.3",
+    "minifyify": "^7.3.3"
+  }
+}
