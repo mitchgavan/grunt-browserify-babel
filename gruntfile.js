@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                 ],
                 dest: './dist/js/common.min.js',
                 options: {
-                    browserifyOptions: { debug: true },
+                    browserifyOptions: { debug: false },
                     transform: [["babelify", { "presets": ["es2015"] }]],
                     plugin: [
                       ["factor-bundle", { outputs: [
