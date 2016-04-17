@@ -29,14 +29,14 @@ module.exports = function (grunt) {
                 ],
                 dest: './dist/js/common.min.js',
                 options: {
-                    browserifyOptions: { debug: false },
+                    browserifyOptions: { debug: true },
                     transform: [["babelify", { "presets": ["es2015"] }]],
                     plugin: [
                       ["factor-bundle", { outputs: [
                             "./dist/js/main-home.min.js",
                             "./dist/js/main-products.min.js"
                         ] }],
-                      ["minifyify", { map: false, uglify: { mangle: true } }]
+                      ["minifyify", { map: false }]
                     ]
                 }
             }
@@ -46,6 +46,7 @@ module.exports = function (grunt) {
     
     grunt.loadNpmTasks('grunt-browserify');
 
-    grunt.registerTask("buildDevelopment", ['browserify:development']);
+    grunt.registerTask("buildDev", ['browserify:development']);
+    grunt.registerTask("buildProd", ['browserify:production']);
 
 };
