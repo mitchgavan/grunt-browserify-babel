@@ -8,3 +8,15 @@ Once you've got the code, install the dependencies by navigating to the director
 npm install
 
 ``` 
+
+Build for development and watch files
+
+```
+npm start
+```
+
+Build for production
+
+```
+npm run build
+```
