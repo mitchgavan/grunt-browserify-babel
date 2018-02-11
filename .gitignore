@@ -18,3 +18,7 @@ node_modules/
 # Editor Config #
 ######################
 .editorconfig
+
+# Build #
+######################
+dist/
