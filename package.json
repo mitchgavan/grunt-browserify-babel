@@ -4,8 +4,8 @@
   "description": "An example setup for ES6 modules with Browserify and Grunt",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/grunt/bin/grunt buildDev",
-    "build": "./node_modules/grunt/bin/grunt buildProd",
+    "start": "grunt buildDev",
+    "build": "grunt buildProd",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,6 +23,7 @@
     "factor-bundle": "^2.5.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
     "minifyify": "^7.3.3"
   },
   "dependencies": {
